@@ -1,0 +1,24 @@
+{
+  "cn": {
+    "setting": "设置",
+    "account": "账号与安全",
+    "notice": "消息通知",
+    "privacyPolicy": "隐私权政策",
+    "about": "关于",
+    "signOut": "退出登录",
+    "confirmSignOut": "确认退出账号",
+    "cancel": "取消",
+    "sure": "确定"
+  },
+  "en": {
+    "setting": "设置",
+    "account": "账号与安全",
+    "notice": "消息通知",
+    "privacyPolicy": "隐私权政策",
+    "about": "关于",
+    "signOut": "退出登录",
+    "confirmSignOut": "确认退出账号",
+    "cancel": "取消",
+    "sure": "确定"
+  }
+}

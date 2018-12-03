@@ -1,0 +1,27 @@
+{
+  "db": [
+    {
+      "bg_color": "background-color: #ff5722;",
+      "title": "Artifacts Record Player",
+      "category": "Objects",
+      "author_link": "./user/eW-UZX3VB0K",
+      "author": "Vladimir Ilic",
+      "content": "It´s magical!",
+      "downloadLink": "https://poly.google.com/downloads/dEZVDbs1iR1/3ELraZc5Lqi/dEZVDbs1iR1_3ELraZc5Lqi_obj.zip",
+      "_files": {
+        "md5": "03fa47306159afbca3bfdc30034a11b5",
+        "url": "http://download.uihtml.com/858816e341a4046a866996ef3649333d.zip",
+        "hash": "Fj-reC5__R-oN5-6r54BlN3fa5Co",
+        "name": "858816e341a4046a866996ef3649333d.zip",
+        "size": 108520,
+        "is_put": 0,
+        "time": 1515559753272
+      },
+      "_TYPE": "objmtl",
+      "_preview_objmtl": {
+        "mtl": "/preview/201819/82458aadb4f832ffb4b411e93f1b5f87/materials.mtl",
+        "obj": "/preview/201819/82458aadb4f832ffb4b411e93f1b5f87/model.obj"
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "db": [
+    {
+      "bg_color": "background-color: #4e342e;",
+      "title": "Cassete Tape",
+      "category": "Technology",
+      "author_link": "./user/4aEd8rQgKu2",
+      "author": "Poly by Google",
+      "content": "#cassete #tape #recording",
+      "downloadLink": "https://poly.google.com/downloads/5GeV4CitAdY/cPuxBYEJE6Y/5GeV4CitAdY_cPuxBYEJE6Y_obj.zip",
+      "_files": {
+        "md5": "fe1aba62dd8212be8a8aaee1edf7f996",
+        "url": "http://download.uihtml.com/478080dc046dbc6f3bb73b3c7fa06c55.zip",
+        "hash": "FtmFE3fOuCeEH0ApqUTatthzq3aF",
+        "name": "478080dc046dbc6f3bb73b3c7fa06c55.zip",
+        "size": 1430405,
+        "is_put": 0,
+        "time": 1515559749710
+      },
+      "_TYPE": "objmtl",
+      "_preview_objmtl": {
+        "mtl": "/preview/201819/9f5f726cb140a2baa88184f8446a3322/CasseteTape.mtl",
+        "obj": "/preview/201819/9f5f726cb140a2baa88184f8446a3322/CasseteTape.obj"
+      }
+    },
+    {
+      "bg_color": "background-color: #e57373;",
+      "title": "Motorcycle",
+      "category": "Transport",
+      "author_link": "./user/4aEd8rQgKu2",
+      "author": "Poly by Google",
+      "content": "",
+      "downloadLink": "https://poly.google.com/downloads/5_MTCnqfUTr/1UxC7K96ggr/5_MTCnqfUTr_1UxC7K96ggr_obj.zip",
+      "_files": {
+        "md5": "b1de0de0b4cc3b633a9907aecc09cf34",
+        "url": "http://download.uihtml.com/29c78c54f9e888697cac22c8b853c950.zip",
+        "hash": "Fje_WF7FY2JCVEItmulO7GxEcPu9",
+        "name": "29c78c54f9e888697cac22c8b853c950.zip",
+        "size": 1038367
+      },
+      "_TYPE": "objmtl",
+      "_preview_objmtl": {
+        "mtl": "/preview/201819/8f757de67e63e9c9dc88eab9a1ce8371/Motorcycle.mtl",
+        "obj": "/preview/201819/8f757de67e63e9c9dc88eab9a1ce8371/Motorcycle.obj"
+      }
+    },
+    {
+      "bg_color": "background-color: #ff5722;",
+      "title": "Artifacts Record Player",
+      "category": "Objects",
+      "author_link": "./user/eW-UZX3VB0K",
+      "author": "Vladimir Ilic",
+      "content": "It´s magical!",
+      "downloadLink": "https://poly.google.com/downloads/dEZVDbs1iR1/3ELraZc5Lqi/dEZVDbs1iR1_3ELraZc5Lqi_obj.zip",
+      "_files": {
+        "md5": "03fa47306159afbca3bfdc30034a11b5",
+        "url": "http://download.uihtml.com/858816e341a4046a866996ef3649333d.zip",
+        "hash": "Fj-reC5__R-oN5-6r54BlN3fa5Co",
+        "name": "858816e341a4046a866996ef3649333d.zip",
+        "size": 108520
+      },
+      "_TYPE": "objmtl",
+      "_preview_objmtl": {
+        "mtl": "/preview/201819/82458aadb4f832ffb4b411e93f1b5f87/materials.mtl",
+        "obj": "/preview/201819/82458aadb4f832ffb4b411e93f1b5f87/model.obj"
+      }
+    }
+  ]
+}

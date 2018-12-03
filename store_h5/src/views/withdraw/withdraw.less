@@ -1,0 +1,115 @@
+@import "../../style/base/variables";
+@import "../../style/components/base-button";
+
+.content {
+  background: #F7F7F7;
+  margin: 0 .2rem .12rem .2rem;
+  padding: .2rem .2rem .22rem .2rem;
+  font-size: .16rem;
+  line-height: .22rem;
+  .little-title {
+    margin-bottom: .2rem;
+  }
+
+  .account-box {
+    margin-bottom: .3rem;
+    .no-bank-card {
+      color: #000;
+      font-weight: 600;
+      font-size: .16rem;
+    }
+    .bank {
+      font-weight: 600;
+    }
+    .account {
+      color: #999999;
+      font-size: .12rem;
+      line-height: .18rem;
+    }
+    .btn {
+      .normal-line-btn(.72rem, .24rem);
+    }
+  }
+
+  .withdraw-amount {
+    margin-bottom: .1rem;
+  }
+
+  .input-box {
+    position: relative;
+    margin-bottom: .2rem;
+    .currency {
+      position: absolute;
+      font-size: .36rem;
+      line-height: .5rem;
+      left: 0;
+    }
+    .input {
+      width: 100%;
+      font-size: .36rem;
+      padding: 0 0 0 .36rem;
+      line-height: .5rem;
+      color: #000000;
+      border-bottom: 2px solid @base-gray;
+      outline: none;
+      caret-color: @base-gold;
+      background: transparent;
+      &.active {
+        border-color: @base-black;
+      }
+      &::-webkit-input-placeholder {
+        color: @base-gray;
+      }
+      &:-moz-placeholder {
+        color: @base-gray;
+      }
+      &::-moz-placeholder {
+        color: @base-gray;
+      }
+      &:-ms-input-placeholder {
+        color: @base-gray;
+      }
+    }
+  }
+
+  .balance {
+    color: #666666;
+    .withdraw-all {
+      font-weight: 600;
+      color: @base-soil;
+    }
+  }
+}
+
+.tips {
+  color: #999999;
+  font-size: .12rem;
+  line-height: .16rem;
+}
+
+.submit-box {
+  position: fixed;
+  bottom: .2rem;
+  width: 100%;
+  padding: 0 .4rem;
+  line-height: .56rem;
+  vertical-align: middle;
+  .submit {
+    width: 100%;
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .14rem;
+    border-radius: .48rem;
+    background: @base-black;
+    color: #ffffff;
+    outline: none;
+    &[disabled] {
+      background: @disabled-color;
+    }
+  }
+}
+
+.move-up-submit {
+  position: static;
+  margin: .8rem auto .2rem auto;
+}
