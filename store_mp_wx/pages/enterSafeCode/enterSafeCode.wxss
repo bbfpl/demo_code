@@ -1,0 +1,35 @@
+/* @import "/components/SafeCodeInput/safeCodeInput.wxss"; */
+
+.page-box {
+  padding: 40rpx;
+}
+
+.page-title {
+  margin-bottom: 80rpx;
+  font-size: 64rpx;
+  line-height: 90rpx;
+  color: #000;
+}
+
+.already-send {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #000;
+  margin-bottom: 60rpx;
+  font-weight: bolder;
+}
+
+.link-text {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #d0b07a;
+  margin: 60rpx 0 40rpx 0;
+  display: inline-block;
+  background: transparent;
+  padding: 0;
+}
+
+button.send-again[disabled] {
+  color: #ccc;
+  background-color: transparent;
+}

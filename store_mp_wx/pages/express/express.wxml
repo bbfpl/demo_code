@@ -1,0 +1,22 @@
+<!--pages/express/express.wxml-->
+  <view class="panel user-order-express-panel">
+
+    <view class="container">
+      <view class="h1 space">物流</view>
+      <view class="express-list space">
+        <view class="export-item flex" wx:for="{{logistics.detail}}" wx:key>
+          <view class="export-item-time">
+            <text>{{item.time.t1}}</text>
+            <text>{{item.time.t2}}</text>
+          </view>
+          <view class="export-item-icon">
+            <text></text>
+          </view>
+          <view class="export-item-text">
+            {{item.content}} 
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>

@@ -1,0 +1,193 @@
+@import "../../lib/style/golbal.wxss";
+@import "../../lib/style/h5.wxss";
+
+
+.navbar {
+  padding: 20px;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 48px;
+}
+
+.navbar-text {
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-text.active:after {
+  content: " ";
+  width: 20px;
+  height: 2px;
+  background-color: #d0b07a;
+  display: block;
+}
+
+.item-container {
+  line-height: 1.6;
+}
+
+.item-container.hidden {
+  display: none;
+}
+
+.user-header{
+  background-color: #000;
+  height: 161px;
+  overflow:hidden;
+  position: relative;
+}
+.user-header navigator{
+  right: 10px;
+  top: 10px;
+  z-index:7;
+}
+.user-header image{
+  width: 100%;
+  position: relative;
+  top: -40%;
+  z-index: 1;
+}
+.shade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 2;
+}
+.user-header-info{
+  position: absolute;
+  z-index: 3; 
+  left: 0;
+  bottom: 0;
+  padding: 30px 20px;
+  width:100%;
+}
+.user-header-name{
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.user-header-address{
+  font-size: 10px;
+  bottom: 14px;
+  line-height: normal;
+  font-weight: 300;
+  color: #fff;
+}
+
+.user-nav{
+  padding: 20px;
+}
+.user-nav navigator{
+  display: inline-block;
+  font-size: 20px;
+  color: #ccc;
+  margin-right: 48px;
+  font-weight: 500;
+  position: relative;
+}
+.user-nav navigator.active:after{
+  content: " ";
+  width: 20px;
+  height: 2px;
+  background-color: #d0b07a;
+  display: block;
+}
+
+/*资产css*/
+
+.assets-item {
+  background-color: rgba(0, 0, 0, 0.03);
+  position: relative;
+  margin: 0 20px 20px 20px;
+}
+
+.assets-item-conten {
+  position: relative;
+  padding: 14px 20px;
+}
+
+.assets-item-conten .label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.assets-item-conten .flex {
+  display: flex;
+}
+
+.assets-item-conten .flex .title {
+  font-size: 20px;
+  color: #000;
+}
+
+.assets-time {
+  font-size: 10px;
+  color: #666;
+}
+
+.assets-id {
+  font-size: 10px;
+  color: #666;
+}
+
+.assets-list-item-img {
+  width: 74px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  text-align: center;
+}
+
+.assets-list-item-img image {
+  width: 100%;
+  display: block;
+}
+
+.assets-list-item-img text {
+  text-align: center;
+  font-size: 12px;
+  color: #d0b07a;
+}
+
+/*消息*/
+
+.user-message-item {
+  margin: 0 20px 20px 20px;
+}
+
+.user-message-item-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.user-message-item-block {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 16px 20px;
+}
+
+.user-message-item-block-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+
+.msg-new {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: red;
+  right: -3px;
+  top: -3px;
+  border-radius: 50%;
+}

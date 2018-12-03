@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": " ",
+  "usingComponents": {
+    "header": "/components/Header/header",
+    "select-area": "/components/SelectArea/selectArea",
+    "notification": "/components/Notification/notification",
+    "app-modal": "/components/AppModal/appModal"
+  }
+}

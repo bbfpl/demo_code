@@ -1,0 +1,93 @@
+<view class="order-detail-page container">
+
+  <view class='h1'>
+    <view class="space flex flex-between">
+      <text>订单详情</text>
+      <view class="flex center">
+        <text class="status">
+          {{getStatusInfo.text}}
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 物流信息 -->
+  <view class="address-info" wx:if="{{getStatusInfo.status==4}}">
+    <view class='space'>
+      <view wx:if="{{item.logistice!=undefined}}">
+        <navigator url='/pages/express/express?order_no={{orderNo}}'>
+          <view class="address-right-icon">
+            <view class="arrow-right-icon"></view>
+          </view>
+          <view class="address-info-name flex flex-start">
+            <text>运输中</text>
+          </view>
+          <view class="address-info-address">{{item.logistice.last_detail}}</view>
+        </navigator>
+      </view>
+      <view wx:else class="address-info-address">暂无物流信息</view>
+    </view>
+  </view>
+
+  <!-- 地址信息 -->
+  <view class="address-info">
+    <view class='space'>
+      <view class="address-info-name flex flex-start">
+        <text>{{item.address.name}}</text>
+      </view>
+      <view class="address-info-phone flex flex-between">
+        <text>{{item.address.phone}}</text>
+      </view>
+      <view class="address-info-address">{{item.address.province_name}}{{item.address.city_name}}{{item.address.location}}</view>
+    </view>
+  </view>
+
+  <!-- 订单信息 -->
+  <view class="order-list">
+    <view class="order-item flex">
+      <view class="order-item-img">
+        <image src="{{item.product.head_image.thumb}}" mode="widthFix" />
+      </view>
+      <view class="order-item-info">
+        <view class="flex flex-between">
+          <text class='order-item-info-t1'>{{item.product.category_name}}</text>
+          <text class="status">1件</text>
+        </view>
+        <view class='order-item-title'>{{item.product.title}}</view>
+        <view class='order-item-time'>{{item.created_at|time}} · ¥ {{item.product.amount}}</view>
+        <view class="order-item-priec">
+          ¥{{item.amount}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="order-info-text">
+    <view class="space order-info-text-p">
+      <text class='order-info-text-t1'>订单编号</text>
+      <text class='order-info-text-t2'>{{item.order_no}}</text>
+    </view>
+    <view class="space order-info-text-p">
+      <text class='order-info-text-t1'>交易时间</text>
+      <text class='order-info-text-t2'>{{item.time}}</text>
+    </view>
+    <view class="space order-info-text-p">
+      <text class='order-info-text-t1'>支付方式</text>
+      <text class='order-info-text-t2'>微信</text>
+    </view>
+    <view class="space order-info-text-p">
+      <text class='order-info-text-t1'>支付价格</text>
+      <text class='order-info-text-t2'>¥{{item.amount}}</text>
+    </view>
+  </view>
+
+  <view class="user-order-detail-btn">
+    <!-- <Button class="ui-btn" @click="pay" :loading="payBtnLoading">付款</Button> -->
+    <view class='space'>
+      <button type="button" class="button black" wx:if="{{getStatusInfo.status==1}}" bindtap="pay" loading='{{isPayLoading}}' disabled="{{isPayLoading}}">付款</button>
+      <button type="button" class="button black" wx:if="{{getStatusInfo.status==4}}">确认收货</button>
+      <button type="button" class="button black" wx:if="{{getStatusInfo.status==5}}">查看退款</button>
+    </view>
+  </view>
+</view>

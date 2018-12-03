@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 184rpx;
+  overflow: hidden;
+}
+
+.img-bg {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 64rpx;
+  color: #fff;
+  font-weight: 500;
+  padding: 40rpx 40rpx 0 40rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-white .header-title {
+  color: #000;
+}

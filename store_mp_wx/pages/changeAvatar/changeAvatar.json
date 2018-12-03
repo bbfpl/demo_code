@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": " ",
+  "usingComponents": {
+    "header": "/components/Header/header",
+    "notification": "/components/Notification/notification",
+    "app-modal": "/components/AppModal/appModal",
+    "upload-imgs": "/components/UploadImgs/uploadImgs"
+  }
+}

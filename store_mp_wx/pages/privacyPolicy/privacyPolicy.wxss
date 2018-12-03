@@ -1,0 +1,25 @@
+.page-box {
+    padding: 40rpx;
+    color: #000;
+    text-align: justify;
+    font-size: 32rpx;
+    font-weight: 400;
+  }
+
+  .page-title {
+    margin-bottom: 40rpx;
+    font-size: 64rpx;
+    line-height: 90rpx;
+    font-weight: bolder;
+  }
+
+  .list-title {
+    font-size: 32rpx;
+    line-height: 48rpx;
+    font-weight: bolder;
+  }
+
+  .list-item {
+    font-size: 32rpx;
+    line-height: 48rpx;
+  }

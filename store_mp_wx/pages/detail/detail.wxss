@@ -1,0 +1,93 @@
+/* pages/detail/detail.wxss */
+@import "../../lib/style/golbal.wxss";
+@import "../../lib/style/h5.wxss";
+.header {
+  width: 100%;
+}
+
+.header image {
+  width: 100%;
+}
+
+.detail-info-text {
+  position: relative;
+  z-index: 1;
+  margin: -40px 40px 80px 0;
+  padding: 30px 20px;
+}
+
+.detail-info-text:before {
+  content: ' ';
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.detail-info-text:after {
+  content: ' ';
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  z-index: -2;
+}
+
+.detail-info-text .span {
+  font-size: 14px;
+  color: #d0b07a;
+  font-weight: 500;
+  display: block;
+}
+
+.detail-info-text .strong {
+  font-size: 32px;
+  color: #000;
+  font-weight: 500;
+}
+
+.detail-info-text .p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+}
+
+.detail-info-text .label {
+  font-size: 24px;
+  color: #d0b07a;
+  font-weight: 500;
+}
+
+.detail-info-text .label:before {
+  content: '¥';
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.detail-content{
+  text-align: center;
+}
+.detail-content .wxParse-p{
+  margin-bottom: 20px;
+}
+.detail-content .wxParse-p image{
+  display: block;
+}
+.d-btns {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  left: 0;
+}
+.d-btns .space{
+  padding: 20px;
+}

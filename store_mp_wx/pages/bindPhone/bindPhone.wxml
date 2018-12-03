@@ -1,0 +1,26 @@
+<view class='page-box'>
+  <notification notification-arr="{{notificationArr}}"></notification>
+  <view class='page-title'>绑定手机号</view>
+  <view class='avatar-box'>
+    <image src='{{user.avatar_thumb}}' alt='' class='avatar'></image>
+    <text class='user-info'>{{ user.nickname }}</text>
+  </view>
+
+  <view class='bind-purpose'>为了您的账户安全，请绑定手机号</view>
+
+  <view class='input-box'>
+    <input type='number' placeholder='手机号' class='app_input input' bindinput="inputVal" data-key='phoneNumber'></input>
+    <view class='dial-code-box'>
+      <text class='dial-code'>CN +{{ phoneCountryCode }}</text>
+      <image src='/images/common/icon-arrow-down@3x.png' alt=' ' class='icon-arrow-down'></image>
+    </view>
+  </view>
+
+
+  <view class="{{ moveUpSubmit ? 'move-up-submit' : 'submit-box'}}">
+    <button class='pull-right submit' disabled='{{disabledSubmit}}' bindtap='validateForm'>
+      <image src='/images/common/icon-go-on@3x.png ' alt='Next ' class='icon-go-on'></image>
+    </button>
+  </view>
+
+</view>

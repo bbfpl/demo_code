@@ -1,0 +1,20 @@
+<import src="../../template/upload/index.wxml" />
+
+<notification notification-arr="{{notificationArr}}"></notification>
+
+<header headerTitle="头像" bg="white"></header>
+
+
+<view class='content-padding'>
+  <view class="avatar-box" style="background-image: url({{avatarPath}});"></view>
+  
+  <view class='upload-imgs-component-box'>
+    <upload-imgs limit="3" changeSuccess="{{ changeSuccess }}" bind:uploadImgsEnd='uploadImgsEnd'></upload-imgs>
+  </view>
+
+  <!-- <view class='submit-btn-box'>
+    <button class="save {{ disabledSubmit ? 'disabled': ''}}" disabled="{{disabledSubmit}}" bindtap="submitHandler">修改</button>
+  </view> -->
+
+
+</view>

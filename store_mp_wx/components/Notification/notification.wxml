@@ -1,0 +1,8 @@
+<!-- 组件模板 -->
+<block wx:for='{{notificationArr}}' wx:key='{{index}}'>
+  <view class='notification-box'>
+    <image src='{{errorIcon}}' alt=' ' class='icon' wx:if="{{item.currentType === 'error'}}"></image>
+    <image src='{{noticeIcon}}' alt=' ' class='icon' wx:if="{{item.currentType === 'notice'}}"></image>
+    <text class='notification'>{{ item.val }}</text>
+  </view>
+</block>

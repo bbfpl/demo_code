@@ -1,0 +1,97 @@
+/* 验证码输入框 */
+
+.code-box {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.code-box .code_dot {
+   border: 1px solid #ccc;
+}
+
+/* code框聚焦的时候 */
+.code-box.focus .code_dot {
+  border-color: #d0b07a;
+}
+
+/* 单个格式样式 */
+
+.code_dot {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.code_dot:not(:last-child) {
+  border-right: none;
+}
+
+.code_dot:last-child {
+  margin-right: 0;
+}
+
+.code_dot_interval {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40rpx;
+  border-bottom: 2px solid #ccc;
+}
+
+.code_dot_interval:last-child {
+  margin-right: 0;
+}
+
+/* 单个格式样式（聚焦的时候） */
+
+.code_dot_interval.focus {
+  border-bottom: 2px solid #000;
+}
+
+/* 模拟光标 */
+
+.cursor {
+  width: 1px;
+  height: 15px;
+  background-color: #d0b07a;
+  animation: focus 1s infinite;
+}
+
+/* 光标动画 */
+
+@keyframes focus {
+  0% {
+    height: 15px;
+  }
+
+  80% {
+    height: 15px;
+  }
+
+  85% {
+    height: 13px;
+  }
+
+  90% {
+    height: 0;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+/* 输入框 */
+
+.input_container {
+  height: 0;
+  width: 0;
+  min-height: 0;
+  position: relative;
+  text-indent: -999em;
+  left: -100%;
+}

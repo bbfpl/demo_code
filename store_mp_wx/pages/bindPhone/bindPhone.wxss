@@ -1,0 +1,114 @@
+.page-box {
+  padding: 40rpx;
+}
+
+.page-title {
+  margin-bottom: 80rpx;
+  font-size: 64rpx;
+  line-height: 90rpx;
+  color: #000;
+}
+
+.avatar-box {
+  margin-bottom: 60rpx;
+}
+
+.avatar {
+  width: 72rpx;
+  height: 72rpx;
+  vertical-align: middle;
+  margin-right: 24rpx;
+  border-radius: 72rpx;
+}
+
+.bind-purpose {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #000;
+  margin-bottom: 40rpx;
+  font-weight: bolder;
+}
+
+.input-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 60rpx;
+}
+
+.dial-code-box {
+  position: absolute;
+  top: 24rpx;
+  left: 0;
+  bottom: 0;
+  vertical-align: middle;
+  line-height: 44rpx;
+}
+
+.dial-code-box .dial-code, .dial-code-box .icon-arrow-down {
+  height: 44rpx;
+  vertical-align: middle;
+}
+
+.icon-arrow-down {
+  height: 44rpx;
+  width: 44rpx;
+}
+
+.input {
+  width: calc(100% - 220rpx);
+  padding: 24rpx 20rpx 24rpx 200rpx;
+}
+
+.submit-box {
+  position: fixed;
+  bottom: 40rpx;
+  width: calc(100% - 80rpx);
+  line-height: 112rpx;
+  vertical-align: middle;
+}
+
+button.submit {
+  width: 240rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  font-size: 32rpx;
+  border-radius: 56rpx;
+  background: #000;
+  color: #fff;
+  outline: none;
+}
+
+button.submit[disabled] {
+  background-color: #ccc;
+}
+
+.submit .icon-go-on {
+  width: 72rpx;
+  height: 24rpx;
+}
+
+.move-up-submit {
+  position: relative;
+  line-height: 112rpx;
+  vertical-align: middle;
+}
+
+.move-up-submit .submit {
+  width: 240rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  font-size: 32rpx;
+  border-radius: 56rpx;
+  background: #000;
+  color: #fff;
+  outline: none;
+}
+
+.move-up-submit .submit[disabled] {
+  background: #ccc;
+}
+
+.move-up-submit .submit .icon-go-on {
+  width: 72rpx;
+}

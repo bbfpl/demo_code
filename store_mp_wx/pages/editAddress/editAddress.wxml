@@ -1,0 +1,76 @@
+<notification notification-arr="{{notificationArr}}"></notification>
+
+<header headerTitle="编辑地址" bg="white"></header>
+
+<view class='content-padding'>
+  <view class='input-box'>
+    <image class='icon' src='/images/address/icon-username@3x.png'></image>
+    <input  
+    type="text"
+    placeholder-class='placeholderClass' 
+    placeholder='收货人'  
+    bindfocus="changeInputStatus" data-input-name='consignee'
+    bindblur="changeInputStatus"
+    class="input {{isFocus.consignee ? ' active ': ' '}}"
+    bindinput='setInputValue' 
+    value="{{form.consignee}}"></input>
+  </view>
+
+   <view class='input-box'>
+    <image class='icon' src='/images/address/icon-phone@3x.png'></image>
+    <input  
+    type="number"
+    placeholder-class='placeholderClass' 
+    placeholder='联系电话'  
+    bindfocus="changeInputStatus" data-input-name='phoneNumber'
+    bindblur="changeInputStatus"
+    class="input {{isFocus.phoneNumber ? ' active ': ' '}}"
+    bindinput='setInputValue' 
+    value="{{form.phoneNumber}}"></input>
+  </view>
+  
+  
+  <view class='input-box select-area'>
+    <image class='icon' src='/images/address/icon-location@3x.png'></image>
+    <input  
+    type="number"
+    placeholder-class='placeholderClass' 
+    placeholder='选择区域'  
+    data-input-name='phoneNumber'
+    class="input"
+    bindinput='setInputValue' 
+    value="{{area}}" disabled='true'></input>
+    
+    <select-area bind:selectedArea='submitArea' class="select-area-component" width="{{options.width}}" height="{{options.height}}"></select-area>
+
+  </view>
+
+
+   <view class='input-box'>
+    <image class='icon' src='/images/address/icon-location@3x.png'></image>
+    <input  
+    type="text"
+    placeholder-class='placeholderClass' 
+    placeholder='详细地址'  
+    bindfocus="changeInputStatus" data-input-name='detailedAddress'
+    bindblur="changeInputStatus"
+    class="input {{isFocus.detailedAddress ? ' active ': ' '}}"
+    bindinput='setInputValue' 
+    value="{{form.detailedAddress}}" cursor-spacing="20"></input>
+  </view>
+
+  <view class='text-center set-default' bindtap='setDefault'>
+  <image src="/images/address/icon-gray-selected@3x.png" class="icon-select" wx:if="{{ isDefault && !canChangeDefaultStatus }}"></image>  
+  <image src="/images/address/icon-selected@3x.png" class="icon-select" wx:elif="{{ isDefault && canChangeDefaultStatus }}"></image>
+  <image src="/images/address/icon-select@3x.png" class="icon-select" wx:else></image>
+  设为默认地址
+  </view>
+  
+  <view class='submit-btn-box'>
+   <button class="delete {{ deleteLoading ? 'disabled': ''}}" disabled="{{deleteLoading}}" bindtap="deleteHandler">删除</button>
+   <button class="save {{ disabledSubmit ? 'disabled': ''}}" disabled="{{disabledSubmit}}" bindtap="submitHandler">保存</button>
+  </view>
+</view>
+
+<app-modal options="{{modalOptions}}" showModalStatus="{{showModalStatus}}" bind:cancel="cancelDelete" bind:ensure="ensureDelete"></app-modal>
+

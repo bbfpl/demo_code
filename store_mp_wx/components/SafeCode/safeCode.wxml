@@ -1,0 +1,12 @@
+<view>
+  <!-- 输入框（表格） -->
+  <view catchtap="set_focus" class='code-box {{(focus_class && get_focus) ? "focus": ""}}' style='width:{{width}};height:{{height}};'>
+    <view wx:for="{{value_num}}" class='{{ interval ? "code_dot_interval" : "code_dot" }}  {{ (focus_class && get_focus && value_length ===index) ? "focus":  "" }} {{(focus_class && value_length > index ) ? "focus":  ""}}' wx:key="{{index}}">
+      <view wx:if="{{(value_length==item-1)&&focus_class}}" class="cursor"></view>
+      <view wx:if="{{value_length>=item}}">{{val_arr[index]}}</view>
+    </view>
+  </view>
+
+  <!-- 输入框（隐藏） -->
+  <input value="{{input_value}}" focus="{{get_focus}}" maxlength="6" type="number" class='input_container' placeholder="" bindinput="get_value" bindfocus="get_focus" bindblur="blur" />
+</view>

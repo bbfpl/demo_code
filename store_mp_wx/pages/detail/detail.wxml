@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+
+<view class='detail-panel tool-footer-bar'>
+  <view class="container">
+    <!--头部产品图片-->
+    <view class="header">
+      <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}" style='height:{{bannerHeight}}px'>
+        <block wx:for="{{bannerImages}}" wx:key>
+          <swiper-item>
+            <image src="{{item.large}}" class="slide-image" mode='widthFix' bindload='imageLoad' />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--头部产品描述-->
+    <view class="detail-info-text">
+      <view class="span">{{item.category_name}}</view>
+      <view class='strong'>{{item.title}}</view>
+      <view class='p'>{{item.sub_title}}</view>
+      <view class='label'>{{item.amount}}</view>
+    </view>
+    <view class='detail-content'>
+      <import src="../../lib/wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+    <view class="d-btns">
+      <view class='space'>
+          <view class="button black" data-id="{{uuid}}" bindtap="buy">立刻购买</view>
+      </view>
+    </view>
+  </view>
+</view>

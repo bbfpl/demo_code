@@ -1,0 +1,27 @@
+<view class="change-avatar-box">
+  <button class="save {{ disabledSubmit ? 'disabled': ''}}" disabled="{{disabledSubmit}}" bindtap="_chooseImage">修改</button>
+</view>
+<!-- <view class="text-right up_upload-btn">
+  <view data-id="{{ id }}" bindtap="_chooseImage" wx:if="{{ images.length < limit }}">
+    <image src="/image/template/icon-add.png" class="up_icon-add"></image>
+    <text class="up_add-text">上传</text>
+    <button class='up_add-btn'>上传</button>
+  </view>
+</view> -->
+
+<!-- <view class="up_img-list" wx:if="{{ images.length > 0 }}">
+  <block wx:for="{{ images }}" wx:key="image">
+    <view class="up-single-img" bindtap="_previewImage" data-src="{{ item.image }}" data-id="{{ id }}">
+      <image class="up_thumb-img" src="{{ item.thumb }}" mode="aspectFill" style="opacity:{{item.state === 1?'1':'0.5'}}" />
+      <image src="/image/icon-btn-close.png" class="up_icon-close" catchtap="_removeImage" data-id="{{id}}" data-index="{{index}}" wx:if="{{item.state === 1}}" />
+
+      <view wx:if="{{ item.state === 2 }}" class="qui-uploader__fail" catchtap="_onRetry" data-id="{{ id }}" data-src="{{ item.image }}" data-index="{{ index }}">
+        <view>
+          重传
+          <image src="/image/icon-recycle.png" class="qui-uploader__fail-icon"/>
+        </view>
+        <view class="qui-uploader__fail-info">上传失败</view>
+      </view>
+    </view>
+  </block>
+</view> -->

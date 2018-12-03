@@ -1,0 +1,4 @@
+<!--home.wxml-->
+<view class="container">
+	<block-all wx:for="{{images}}" wx:for-item="item" wx:key data="{{item}}" class="block-all"></block-all>
+</view>

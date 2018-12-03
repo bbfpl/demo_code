@@ -1,0 +1,4 @@
+<view class="header {{bg === 'white' ? 'bg-white' : 'bg-black'}}">
+  <image src='/images/common/header-bg@3x.png' class='img-bg' wx:if="{{bg !== 'white'}}"></image>
+  <view class="header-title">{{headerTitle}}</view>
+</view>

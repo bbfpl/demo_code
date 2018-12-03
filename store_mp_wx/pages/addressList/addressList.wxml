@@ -1,0 +1,20 @@
+<notification notification-arr="{{notificationArr}}"></notification>
+
+<header headerTitle="收货信息" bg="white"></header>
+
+<view class='content-padding'>
+
+  <view wx:for="{{receiptInfoArr}}" wx:key="{{index-address}}" class="info-list-one" bindtap="clickHandler" data-info="{{item}}">
+    <view class="name-box">
+      <text class='name'>{{ item.name }}</text>
+      <text class="default-address" wx:if="{{item.is_default}}">默认</text>
+    </view>
+    <view class="phone">{{ item.phone }}</view>
+    <view class="address">{{ item.country_name }}{{ item.province_name }}{{ item.city_name }}{{ item.location }}</view>
+    <image src='/images/icon/arrow-right.png' class="icon-arrow-right"></image>
+  </view>
+
+  <view class='submit-btn-box'>
+    <button bindtap="addAddress" class='app_btn-black app_btn-big' disabled='{{ disabledSubmit }}'>新增收货地址</button>
+  </view>
+</view>

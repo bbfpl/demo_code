@@ -1,0 +1,22 @@
+@import "../../lib/style/form.wxss";
+
+.avatar-box {
+  width: 480rpx;
+  height: 480rpx;
+  margin: 0 auto 176rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(/static/img/home/breed-img@3x.png) no-repeat 50%;
+  background-size: cover;
+}
+
+.submit-btn-box {
+  text-align: center;
+}
+
+.upload-imgs-component-box {
+  text-align: center;
+  margin-top: 120rpx;
+  padding: 0 40rpx;
+  font-size: 0;
+}

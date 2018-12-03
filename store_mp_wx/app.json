@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/explore/explore",
+    "pages/user/user",
+    "pages/orderDetail/orderDetail",
+    "pages/detail/detail",
+    "pages/buy/buy",
+    "pages/payStatus/payStatus",
+    "pages/express/express",
+    "pages/login/login",
+    "pages/bindPhone/bindPhone",
+    "pages/enterSafeCode/enterSafeCode",
+    "pages/privacyPolicy/privacyPolicy",
+    "pages/about/about",
+    "pages/setting/setting",
+    "pages/account/account",
+    "pages/addAddress/addAddress",
+    "pages/editAddress/editAddress",
+    "pages/addressList/addressList",
+    "pages/changeAvatar/changeAvatar",
+    "pages/changeUsername/changeUsername",
+    "pages/changePassword/changePassword"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "熊猫大陆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#000",
+    "color": "#999",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/ic_main_normal.png",
+        "selectedIconPath": "static/icon/ic_main_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "iconPath": "static/icon/ic_explore_normal.png",
+        "selectedIconPath": "static/icon/ic_explore_active.png",
+        "text": "探索"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/icon/ic_mine_normal.png",
+        "selectedIconPath": "static/icon/ic_mine_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

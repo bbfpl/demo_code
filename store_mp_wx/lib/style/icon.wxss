@@ -1,0 +1,5 @@
+.icon-arrow-right {
+  margin-left: 16rpx;
+  width: 48rpx;
+  height: 48rpx;
+}

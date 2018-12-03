@@ -1,0 +1,82 @@
+.content-padding {
+  padding: 0 40rpx;
+}
+
+.input-box {
+  margin-bottom: 60rpx;
+  position: relative;
+  min-height: 92rpx;
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 84rpx;
+  line-height: 92rpx;
+  height: 92rpx;
+  font-size: 32rpx;
+  color: #000;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+.input.placeholderClass {
+  color: #ccc;
+}
+
+.input.active {
+  border-color: #000;
+}
+
+.submit-btn-box {
+  margin-top: 120rpx;
+  padding: 0 40rpx;
+}
+
+.save-btn-box {
+  margin-top: 120rpx;
+  padding: 0 40rpx;
+  font-size: 0;
+}
+
+.submit-btn-box .delete, .submit-btn-box .save {
+  height: 96rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  border-radius: 48rpx;
+  outline: none;
+  border: 2px solid;
+  display: inline-block;
+}
+
+.submit-btn-box .delete.disabled, .submit-btn-box .save.disabled {
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.submit-btn-box .save {
+  width: calc((100% - 40rpx) / 2);
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.submit-btn-box .delete {
+  width: calc((100% - 40rpx) / 2);
+  background: #fff;
+  color: #000;
+  border-color: #000;
+  margin-right: 40rpx;
+}

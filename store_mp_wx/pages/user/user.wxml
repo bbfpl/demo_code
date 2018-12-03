@@ -1,0 +1,99 @@
+<!--pages/user/user.wxml-->
+<view>
+  <view class="user-header">
+    <view class='shade'></view>
+    <navigator url='/pages/setting/setting' class='position-absolute'>
+      <view class="setting-icon white"></view>
+    </navigator>
+    <image src="{{userInfo.avatar_thumb}}" mode="widthFix" />
+    <view class='user-header-info'>
+      <view class='user-header-name'>{{userInfo.nickname}}</view>
+      <view class='user-header-address' wx:if="{{userInfo.wallet!=''}}">钱包地址:{{userInfo.wallet}}</view>
+    </view>
+  </view>
+
+
+  <view class="navbar">
+    <view class="navbar-item" wx:for="{{navbar}}" wx:key wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+      <view class="navbar-text {{currentNavbar==idx ? 'active' : ''}}">
+        {{item}}
+        <block wx:if="{{idx==2}}">
+          <view class='msg-new' wx:if="{{isNew == true}}"></view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <!-- 资产 -->
+  <view class="item-container {{currentNavbar==0 ? '' : 'hidden'}}">
+    <block wx:for="{{assetsList}}" wx:key wx:for-index="idx">
+      <view class="assets-item">
+        <view class="assets-item-conten">
+          <view class="label">{{item.product.category_name}}</view>
+          <view class="flex">
+            <text class="title">{{item.product.title}}</text>
+          </view>
+          <view class="assets-time">{{item.time}}</view>
+          <view class='assets-id'>{{item.order_no}}</view>
+          <view class="assets-list-item-img">
+            <image src="{{item.product.head_image.thumb}}" mode="widthFix" />
+            <text class="state">{{item.stateName}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="no-data" wx:if="{{assetsNoData==true}}">
+      <image src="../../static/user/img_default_asset.png" mode="widthFix" />
+      <text>暂无资产</text>
+    </view>
+  </view>
+  <!-- 订单 -->
+  <view class="item-container {{currentNavbar==1 ? '' : 'hidden'}}">
+    <block wx:for="{{orderList}}" wx:key wx:for-index="idx">
+      <view class="order-item flex">
+        <view class="order-item-img" data-id="{{item.order_no}}" bindtap="openOrderDetail">
+          <image src="{{item.product.head_image.thumb}}" mode="widthFix" />
+        </view>
+        <view class="order-item-info">
+          <view data-id="{{item.order_no}}" bindtap="openOrderDetail">
+            <view class="flex flex-between">
+              <view class='order-item-info-t1'>{{item.product.category_name}}</view>
+              <view class="status">{{item.status.text}}</view>
+            </view>
+            <view class='order-item-title'>{{item.product.title}}</view>
+            <view class='order-item-time'>{{item.time}} · ¥ {{item.product.amount}}</view>
+          </view>
+          <view class="order-item-btns flex">
+            <button class="button white small" wx:if="{{item.status.status == 4}}">确认收货</button>
+            <navigator url='/pages/express/express?order_no={{item.order_no}}'>
+              <button class="button white small" wx:if="{{item.status.status == 4}}">查看物流</button>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <view class="no-data" wx:if="{{orderNoData==true}}">
+      <image src="../../static/user/img_default_order.png" mode="widthFix" />
+      <text>暂无订单</text>
+    </view>
+
+  </view>
+  <!-- 消息 -->
+  <view class="item-container {{currentNavbar==2 ? '' : 'hidden'}}">
+    <block wx:for="{{messageList}}" wx:key wx:for-index="idx">
+      <view class="user-message-item" v-for="(item,index) in data">
+        <view class='user-message-item-time'>{{item.time}}</view>
+        <view class="user-message-item-block flex flex-between">
+          <view class='user-message-item-block-title'>{{item.content}}</view>
+          <view class="flex center">
+            <view class="arrow-right-icon"></view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="no-data" wx:if="{{messageNoData==true}}">
+      <image src="../../static/user/img_default_notice.png" mode="widthFix" />
+      <text>暂无订单</text>
+    </view>
+  </view>
+</view>

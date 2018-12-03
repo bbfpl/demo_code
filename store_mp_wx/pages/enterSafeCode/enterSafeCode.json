@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": " ",
+  "usingComponents": {
+    "notification": "/components/Notification/notification",
+    "safe-code": "../../components/SafeCode/safeCode"
+  }
+}

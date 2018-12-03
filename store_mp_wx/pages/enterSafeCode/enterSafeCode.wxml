@@ -1,0 +1,24 @@
+<view>
+  <notification notification-arr="{{notificationArr}}"></notification>
+
+  <view class='page-box'>
+    <view class='page-title'>请输入短信验证码</view>
+    <view class='already-send'>验证码已发送到 +{{ phoneCountryCode }} {{ phoneNumber }}</view>
+
+    <safe-code bindinputEnd="signIn"
+               input_value="{{inputData.input_value}}"
+               value_length="{{inputData.value_length}}"
+               isNext="{{inputData.isNext}}"
+               get_focus="{{inputData.get_focus}}"
+               focus_class="{{inputData.focus_class}}"
+               value_num="{{inputData.value_num}}"
+               height="{{inputData.height}}"
+               width="{{inputData.width}}"
+               interval="{{inputData.interval}}">
+    </safe-code>
+
+    <button class='link-text send-again' disabled='{{countdown > 0}}' bindtap='sendSafeCodeAgain'>重新发送
+      <text hidden='{{countdown < 1}}'>({{ countdown }}s)</text>
+    </button>
+  </view>
+</view>

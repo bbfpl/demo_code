@@ -1,0 +1,3 @@
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindPickerColumnChange" value="{{indexArr}}" range="{{allAddress}}" range-key="{{'name'}}" class="picker {{ isTransparent ? 'transparent-color': ''}}" style='width:{{width}};height:{{height}};line-height:{{height}}'>
+  选择 {{ allAddress[0][indexArr[0]].name }} {{allAddress[1][indexArr[1]].name}}
+</picker>

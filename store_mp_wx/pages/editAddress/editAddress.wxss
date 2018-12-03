@@ -1,0 +1,22 @@
+@import "../../lib/style/form.wxss";
+
+.content-padding {
+  padding: 0 40rpx;
+}
+
+.select-area-component {
+  position: absolute;
+  height: 96rpx;
+  z-index: 1002;
+}
+
+.set-default {
+  line-height: 48rpx;
+}
+
+.icon-select {
+  width: 48rpx;
+  height: 48rpx;
+  vertical-align: middle;
+  line-height: 48rpx;
+}

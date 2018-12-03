@@ -1,0 +1,65 @@
+.save {
+  height: 96rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  border-radius: 48rpx;
+  outline: none;
+  border: 2px solid;
+  display: inline-block;
+  width: calc((100% - 40rpx) / 2);
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.change-avatar-box .save.disabled {
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.up_upload-btn {
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+/* .up_upload-btn .up_icon-add {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
+  vertical-align: middle;
+} */
+
+.up_upload-btn .up_add-text {
+  color: #f46658;
+  vertical-align: middle;
+  font-size: 32rpx;
+}
+
+.up_img-list {
+  padding: 24rpx 0 8rpx 44rpx;
+  height: 172rpx;
+}
+
+.up_img-list .up-single-img {
+  display: inline-block;
+  position: relative;
+  height: 172rpx;
+}
+
+.up_img-list .up-single-img:last-child {
+  margin-left: 30rpx;
+}
+
+.up_img-list .up_thumb-img {
+  display: inline-block;
+  width: 272rpx;
+  height: 176rpx;
+}
+
+.up_img-list .up_icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52rpx;
+  height: 42rpx;
+}

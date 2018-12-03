@@ -1,0 +1,116 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx2e3b7f3d0f876774",
+	"projectname": "Panda%20store%20mp",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "bindPhone",
+					"pathName": "pages/bindPhone/bindPhone",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "enterSafeCode",
+					"pathName": "pages/enterSafeCode/enterSafeCode",
+					"query": "phoneNumber=15196685017"
+				},
+				{
+					"id": -1,
+					"name": "privacyPolicy",
+					"pathName": "pages/privacyPolicy/privacyPolicy",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "setting",
+					"pathName": "pages/setting/setting",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "account",
+					"pathName": "pages/account/account",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "chanegAvatar",
+					"pathName": "pages/changeAvatar/changeAvatar",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址列表",
+					"pathName": "pages/addressList/addressList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑地址",
+					"pathName": "pages/editAddress/editAddress",
+					"query": ""
+				}
+			]
+		}
+	}
+}

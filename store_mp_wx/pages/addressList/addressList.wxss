@@ -1,0 +1,61 @@
+@import "../../lib/style/form.wxss";
+@import "../../lib/style/icon.wxss";
+
+.content-padding {
+  padding: 0 40rpx 40rpx 40rpx;
+}
+
+.select-area-component {
+  position: absolute;
+  height: 96rpx;
+  z-index: 1002;
+}
+
+.info-list-one {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  color: #000;
+  padding: 40rpx 0;
+}
+
+.info-list-one .name-box {
+  line-height: 44rpx;
+  margin-bottom: 16rpx;
+  font-size: 0;
+}
+
+.info-list-one .name-box .name {
+  font-size: 32rpx;
+}
+
+.info-list-one .name-box .default-address {
+  font-size: 32rpx;
+  margin-left: 16rpx;
+  color: #d0b07a;
+  border: 1px solid #d0b07a;
+  border-radius: 4rpx;
+}
+
+.info-list-one .phone {
+  font-size: 32rpx;
+  line-height: 44rpx;
+  margin-bottom: 12rpx;
+}
+
+.info-list-one .address {
+  font-size: 32rpx;
+  line-height: 40rpx;
+  color: #999;
+  max-width: calc(100% - 76rpx);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info-list-one .icon-arrow-right {
+  position: absolute;
+  width: 48rpx;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
